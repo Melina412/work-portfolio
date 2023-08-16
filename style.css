@@ -1,0 +1,167 @@
+/* Farben: #9e9e9e, #fff, #000, #333, #666 
+
+EM DASH (langer Bindestrich)
+Unicode: U+2014, UTF-8: E2 80 94*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: WorkSans;
+  src: url(./assets/font/Work_Sans/static/WorkSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: DidactGothic;
+  src: url(./assets/font/Didact_Gothic/DidactGothic-Regular.ttf);
+}
+
+@font-face {
+  font-family: FjallaOne;
+  src: url(./assets/font/Fjalla_One/FjallaOne-Regular.ttf);
+}
+
+.header-container {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 1928px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  width: 720px;
+  height: 1789px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header-img {
+  width: 720px;
+  height: 1080px;
+}
+
+.orbis {
+  background-image: url(./assets/img/portfolio2.jpg);
+  width: 1440px;
+  height: 826px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rollr {
+  background-image: url(./assets/img/portfolio3.png);
+  width: 1440px;
+  height: 1056px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galitos {
+  background-image: url(./assets/img/portfolio4.jpg);
+  width: 1440px;
+  height: 826px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tretto {
+  background-image: url(./assets/img/portfolio5.png);
+  width: 1440px;
+  height: 1056px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.what-more {
+  background-color: #000000;
+  width: 1440px;
+  height: 931px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.contact-container {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 1520px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact {
+  width: 702px;
+  height: 1160px;
+}
+
+p {
+  font-size: 20px;
+  font-family: WorkSans;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: DidactGothic;
+}
+
+h2 {
+  font-size: 160px;
+  font-family: WorkSans;
+}
+
+h3 {
+  font-size: 112px;
+  font-family: DidactGothic;
+}
+
+h4 {
+  font-size: 180px;
+}
+
+h5 {
+  font-size: 20px;
+  font-family: WorkSans;
+}
+
+h5:first-child::before {
+  content: "\2014 ";
+  font-size: 20px;
+}
+
+.orbis h3,
+.galitos h3 {
+  color: #ffffff;
+}
+
+.rollr h3,
+.tretto h3 {
+  color: #000000;
+}
+
+.orbis h5,
+.galitos h5 {
+  color: #9e9e9e;
+}
+
+.rollr h5,
+.tretto h5 {
+  color: #666666;
+}
