@@ -1,8 +1,3 @@
-/* Farben: #9e9e9e, #fff, #000, #333, #666 
-
-EM DASH (langer Bindestrich)
-Unicode: U+2014, UTF-8: E2 80 94*/
-
 * {
   margin: 0;
   padding: 0;
@@ -32,6 +27,7 @@ Unicode: U+2014, UTF-8: E2 80 94*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 33px;
 }
 
 .header {
@@ -107,61 +103,237 @@ Unicode: U+2014, UTF-8: E2 80 94*/
   background-size: cover;
 }
 
-.contact {
-  width: 702px;
-  height: 1160px;
-}
-
-p {
+.portfolio {
   font-size: 20px;
   font-family: WorkSans;
+  width: fit-content;
+  margin: 20px auto;
 }
 
 h1 {
   font-size: 100px;
   font-family: DidactGothic;
+  font-weight: 400;
+  margin: 60px auto;
 }
 
 h2 {
   font-size: 160px;
   font-family: WorkSans;
-}
-
-h3 {
-  font-size: 112px;
-  font-family: DidactGothic;
-}
-
-h4 {
-  font-size: 180px;
-}
-
-h5 {
-  font-size: 20px;
-  font-family: WorkSans;
-}
-
-h5:first-child::before {
-  content: "\2014 ";
-  font-size: 20px;
-}
-
-.orbis h3,
-.galitos h3 {
-  color: #ffffff;
-}
-
-.rollr h3,
-.tretto h3 {
-  color: #000000;
+  font-weight: 400;
+  margin: 118px auto;
 }
 
 .orbis h5,
 .galitos h5 {
+  font-size: 20px;
+  font-family: WorkSans;
+  padding-top: 150px;
+  padding-bottom: 20px;
+  margin-left: 220px;
   color: #9e9e9e;
+}
+
+.orbis h3,
+.galitos h3 {
+  font-family: DidactGothic;
+  font-size: 112px;
+  font-weight: 200;
+  margin-left: 220px;
+  padding-bottom: 40px;
+  color: #ffffff;
+}
+
+.orbis h6,
+.galitos h6 {
+  font-size: 20px;
+  font-family: WorkSans;
+  padding-bottom: 80px;
+  margin-left: 220px;
+  color: #9e9e9e;
+}
+
+.orbis button,
+.galitos button {
+  font-size: 16px;
+  font-family: FjallaOne;
+  padding: 16px 26px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 220px;
+  border-color: #9e9e9e;
+  color: #ffffff;
+}
+
+.orbis button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.orbis button:hover ~ .number {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.galitos button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.galitos button:hover ~ .number {
+  color: #ffffff;
+  opacity: 1;
+}
+
+.rollr button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.rollr button:hover ~ .number {
+  color: #000000;
+  opacity: 1;
+}
+
+.tretto button:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.tretto button:hover ~ .number {
+  color: #000000;
+  opacity: 1;
 }
 
 .rollr h5,
 .tretto h5 {
+  font-size: 20px;
+  font-family: WorkSans;
+  padding-top: 250px;
+  padding-bottom: 20px;
+  margin-left: 220px;
   color: #666666;
+}
+
+.rollr h3,
+.tretto h3 {
+  font-family: DidactGothic;
+  font-size: 112px;
+  font-weight: 200;
+  margin-left: 220px;
+  padding-bottom: 40px;
+  color: #000000;
+}
+
+.rollr h6,
+.tretto h6 {
+  font-size: 20px;
+  font-family: WorkSans;
+  padding-bottom: 80px;
+  margin-left: 220px;
+  color: #666666;
+}
+
+.rollr button,
+.tretto button {
+  font-size: 16px;
+  font-family: FjallaOne;
+  padding: 16px 26px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 2px;
+  margin-left: 220px;
+  border-color: #000000;
+  color: #000000;
+}
+
+h5:first-child::before {
+  content: "\2014  ";
+  font-size: 20px;
+}
+
+.orbis .number,
+.galitos .number {
+  font-size: 165px;
+  font-family: FjallaOne;
+  width: fit-content;
+  margin-left: 1173px;
+  margin-bottom: 100px;
+  color: #9e9e9e;
+  opacity: 0.2;
+  letter-spacing: -2px;
+  font-weight: 400;
+}
+
+.rollr .number,
+.tretto .number {
+  font-size: 165px;
+  font-family: FjallaOne;
+  width: fit-content;
+  margin-left: 1171px;
+  margin-bottom: 230px;
+  color: #666666;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 180px;
+  font-family: WorkSans;
+  font-weight: 400;
+  width: fit-content;
+  letter-spacing: -16px;
+  margin: 0 auto;
+  padding-top: 130px;
+  padding-bottom: 150px;
+}
+
+.what-more div {
+  font-size: 22px;
+  font-family: WorkSans;
+  color: #666666;
+  width: 700px;
+  height: 200px;
+  line-height: 37px;
+  margin-left: 640px;
+  margin-bottom: 70px;
+}
+
+.what-more a {
+  font-size: 60px;
+  font-family: WorkSans;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: -3.5px;
+  margin-left: 640px;
+}
+
+.contact {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 230px;
+  margin-bottom: 130px;
+  height: 1160px;
+  width: 702px;
+}
+
+.contact a {
+  font-size: 160px;
+  display: block;
+  text-align: center;
+  font-family: DidactGothic;
+  font-weight: 400;
+  color: #000000;
+  text-decoration: none;
+  margin: 150px auto;
+}
+
+.contact a:first-child {
+  margin-top: 0;
+}
+
+.contact a:nth-child(3) {
+  margin-bottom: 220px;
 }
